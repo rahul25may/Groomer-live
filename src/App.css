@@ -1560,12 +1560,12 @@ td {
     font-weight: bold;
     font-size: 12px;
     margin-top: 7px;
-    margin-left: 20px;
+    margin-left: 108px;
     text-decoration: underline;
     text-decoration-color: white;
     text-decoration-skip-ink: 10px;
-    text-underline-offset: 2.5px;
-    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    text-decoration-thickness: 1px;
 }
 .checkout-button {
   padding: 8px 45px;
