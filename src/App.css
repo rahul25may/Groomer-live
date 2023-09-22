@@ -1548,6 +1548,10 @@ td {
   justify-content: center;
   align-items: center;
 }
+.sort-buttons {
+  display: flex;
+    flex-direction: column;
+}
 
 .writeReview-botton {
   padding: 4px 30px;
@@ -1560,7 +1564,7 @@ td {
     font-weight: bold;
     font-size: 12px;
     margin-top: 7px;
-    margin-left: 100px;
+    margin-left: 60px;
     text-decoration: underline;
     text-decoration-color: white;
     text-decoration-skip-ink: 10px;
