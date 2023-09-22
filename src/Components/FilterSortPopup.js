@@ -145,6 +145,15 @@ function FilterSortPopup({ close, filterOptions, setFilterOptions }) {
                                 value="Female"
                                 checked={filterOptions.manhood === 'Female'}
                                 onChange={handleFilterChange}
+                                style={{ marginRight: "10px" }}
+                            />
+                            <label style={{ marginRight: "6px" }}>Both</label>
+                            <input
+                                type="radio"
+                                name="manhood"
+                                value="Both"
+                                // checked={filterOptions.manhood === 'Female' && 'Male'}
+                                // onChange={handleFilterChange}
                             />
                         </div>
                     </div>
