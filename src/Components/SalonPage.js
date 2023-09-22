@@ -848,20 +848,25 @@ function SalonPage() {
                       <tr>
                         <td>Name:</td>
                         <td>
-                          <input
-                            value={userdetails.name}
-                            onChange={(e) =>
-                              setUserDetails((prevDetails) => ({
-                                ...prevDetails,
-                                name: e.target.value,
-                              }))
-                            }
-                          readOnly/>
+                        {!Reschedule ? (
+                            <input
+                              value={userdetails.name}
+                              onChange={(e) =>
+                                setUserDetails((prevDetails) => ({
+                                  ...prevDetails,
+                                  name: e.target.value,
+                                }))
+                              }
+                            />
+                          ) : (
+                            <span>{userdetails.name}</span>
+                        )}
                         </td>
                       </tr>
                       <tr>
                         <td>Email:</td>
                         <td>
+                        {!Reschedule ? (
                           <input
                             value={userdetails.email}
                             onChange={(e) =>
@@ -870,12 +875,16 @@ function SalonPage() {
                                 email: e.target.value,
                               }))
                             }
-                            readOnly/>
+                          />
+                        ) :(
+                          <span>{userdetails.email}</span>
+                        )}
                         </td>
                       </tr>
                       <tr>
                         <td>Mobile:</td>
                         <td>
+                        {!Reschedule ? (
                           <input
                             value={userdetails.phone}
                             onChange={(e) =>
@@ -884,7 +893,10 @@ function SalonPage() {
                                 phone: e.target.value,
                               }))
                             }
-                            readOnly/>
+                          />
+                          ) :(
+                            <span>{userdetails.phone}</span>
+                          )}
                         </td>
                       </tr>
                     </tbody>
