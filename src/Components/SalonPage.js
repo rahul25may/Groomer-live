@@ -218,7 +218,7 @@ function SalonPage() {
 
     if (numCombos > 0) {
       if (numServices > 0) {
-        text += " and ";
+        text += " and\n";
       }
       text += `${numCombos} combo${numCombos > 1 ? "s" : ""}`;
     }
@@ -640,14 +640,14 @@ function SalonPage() {
                       <DatePicker color={"#232323"} date={"Today"} />
                     </div>
                     {cartItems.length > 0 && (
-                      <div style={{ display: "flex", flexDirection: "row" }}>
+                      <div style={{ display: "flex", flexDirection: "row", position: "relative", top: "-3px"}}>
                         <label style={{ marginRight: "10px" }}>Time:</label>
                         {/* <CustomDropdown label="Date" Label={true} options={["Today", "Tomorrow", "16 June", "17 June"]} searchFilter={false} width={"70px"} fontSize={"12px"} /> */}
                         <TimePicker />
                       </div>
                     )}
                     {/* {cartItems.length > 0 && <CustomTimeDropdown Label={true} />} */}
-                    <div>
+                    {/* <div>
                       <CustomDropdown
                         label="Location"
                         Label={true}
@@ -662,7 +662,7 @@ function SalonPage() {
                         width={"80px"}
                         fontSize={"12px"}
                       />
-                    </div>
+                    </div> */}
                   </div>
                   <div
                     className="pcontent"
@@ -816,10 +816,10 @@ function SalonPage() {
                   }}
                 >
                   <div>
-                  <b >Total amount: </b>
+                  <b >Total amount: </b><br />
                   <b>{calculateTotalAmount()}</b>
                   </div>
-                  <div id="displayCart" style={{ fontSize: "15px" }}>
+                  <div id="displayCart" style={{ fontSize: "15px", whiteSpace: "pre-line" }}>
                     {displayCartItems()}
                   </div>
                 </div>
