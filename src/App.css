@@ -802,6 +802,7 @@ p {
   margin-top: 10px;
   border-radius: 25px;
   padding: 20px;
+  padding-right: 0;
   /* Add other styles like background color, box-shadow, etc. to style the popup */
   /* ... */
 }
@@ -1372,12 +1373,22 @@ p {
 }
 
 .showmore {
-  background: #FF6548;
-  border: 0;
-  border-radius: 20px;
-  color: #FFF;
-  font-weight: 700;
+  padding: 4px 30px;
+  background-color: #FF6548;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 6.5px;
+  /* margin-left: 60px; */
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-skip-ink: 10px;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
 }
 
 /* Add this to your App.css or create a new CSS file */

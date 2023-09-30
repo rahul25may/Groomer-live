@@ -157,11 +157,11 @@ function FilterSortPopup({ close, filterOptions, setFilterOptions }) {
                             />
                         </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>Date:
+                    {/* <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>Date:
                         <span style={{ marginLeft: "37px" }}>
                             <DatePicker color={"#0F0F0F"} />
                         </span>
-                    </div>
+                    </div> */}
                     <div style={{ display: "flex", flexDirection: "row" }}>
                         <label style={{ marginRight: "20px" }}>Time:</label>
                         <TimePicker />

@@ -434,13 +434,13 @@ function SalonPage() {
                       }}
                     />
                   </div>
-                  <div>
+                  {/* <div>
                     
                     <button className="writeReview-botton" onClick={writeReviewf}>
                     Write a Review
                   </button>
-                  </div>
-                  <br />
+                  </div> */}
+                  {/* <br /> */}
                   
                   <div className="ratings desktopView">
                     <div className="star-rating">
@@ -469,7 +469,7 @@ function SalonPage() {
                         style={{
                           fontSize: "12px",
                           position: "relative",
-                          top: "-5px",
+                          top: "-10px",
                         }}
                       >
                         of {salonData.reviewData.length} reviews
@@ -559,14 +559,20 @@ function SalonPage() {
                           </div>
                         </div>
                       ))}
+                      
                     {salonData.reviewData.length > reviewsToShow && (
                       <div
                         style={{
                           display: "flex",
                           justifyContent: "flex-end",
                           width: "100%",
+                          justifyContent: "space-between",
+                          padding: "0 6px",
                         }}
                       >
+                        <button className="writeReview-botton" onClick={writeReviewf}>
+                    Write a Review
+                  </button>
                         <button
                           className="showmore"
                           onClick={handleShowMoreReviews}
@@ -634,11 +640,11 @@ function SalonPage() {
                       margin: "0 40px",
                     }}
                   >
-                    <div style={{ display: "flex", flexDirection: "row" }}>
-                      <label>Date:</label>
+                    {/* <div style={{ display: "flex", flexDirection: "row" }}>
+                      <label>Date:</label> */}
                       {/* <CustomDropdown label="Date" Label={true} options={["Today", "Tomorrow", "16 June", "17 June"]} searchFilter={false} width={"70px"} fontSize={"12px"} /> */}
-                      <DatePicker color={"#232323"} date={"Today"} />
-                    </div>
+                      {/* <DatePicker color={"#232323"} date={"Today"} />
+                    </div> */}
                     {cartItems.length > 0 && (
                       <div style={{ display: "flex", flexDirection: "row", position: "relative", top: "-3px"}}>
                         <label style={{ marginRight: "10px" }}>Time:</label>
@@ -824,7 +830,12 @@ function SalonPage() {
                   </div>
                 </div>
                 <div style={{ textAlign: "center", marginBottom: "20px" }}>
-                  <button className="checkout-button" onClick={handleCheckout}>
+                  <button className="checkout-button" onClick={
+                    // handleCheckout
+                    () => {
+                      navigate('/login');
+                  }
+                  }>
                     Checkout
                   </button>
                 </div>
