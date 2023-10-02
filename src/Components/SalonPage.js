@@ -869,7 +869,7 @@ function SalonPage() {
                 </div>
                 <span className="close-button" onClick={handleClosePopup}>
                   <WestIcon fontSize="medium" />
-                  <span style={{ marginLeft: "4px", position:"relative", top:"-7px" }}>Back</span>
+                  <span style={{ marginLeft: "4px", position:"relative", top:"2px" }}>Back</span>
                 </span>
               </div>
             )}
