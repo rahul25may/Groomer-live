@@ -30,24 +30,24 @@ const DatePicker = ({ color, date }) => {
 
     // Function to initialize the jQuery UI datepicker
     const initializeDatePicker = () => {
-        $(datePickerRef.current).datepicker({
-            showButtonPanel: true,
-            dateFormat: 'dd/mm/yy',
-            changeMonth: true,
-            changeYear: true,
-            yearRange: 'c:c+10',
-            hidePrevNext: true,
-            dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-            showOtherMonths: true,
-            stepMonths: 0,
-            buttonImageOnly: true,
-            buttonImage: calendar,
-            buttonText: 'Pick Date',
-            showOn: 'button',
-            onSelect: (date) => {
-                setSelectedDate(date);
-            },
-        });
+        // $(datePickerRef.current).datepicker({
+        //     showButtonPanel: true,
+        //     dateFormat: 'dd/mm/yy',
+        //     changeMonth: true,
+        //     changeYear: true,
+        //     yearRange: 'c:c+10',
+        //     hidePrevNext: true,
+        //     dayNamesMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        //     showOtherMonths: true,
+        //     stepMonths: 0,
+        //     // buttonImageOnly: true,
+        //     // buttonImage: calendar,
+        //     // buttonText: 'Pick Date',
+        //     // showOn: 'button',
+        //     // onSelect: (date) => {
+        //     //     setSelectedDate(date);
+        //     // },
+        // });
         $('.ui-datepicker-next, .ui-datepicker-prev').addClass('ui-state-disabled');
     };
 
@@ -109,7 +109,7 @@ const DatePicker = ({ color, date }) => {
                         color: '#fff',
                         fontSize: '15px',
                         position: 'relative',
-                        top: '-4px',
+                        top: '2px',
                         paddingRight: '0',
                         marginRight: '-8px',
                     }}

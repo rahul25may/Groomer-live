@@ -661,13 +661,17 @@ function SalonPage() {
                       justifyContent: "center",
                       flexWrap: "wrap",
                       margin: "0 40px",
+                      flexDirection: "column",
                     }}
                   >
-                    {/* <div style={{ display: "flex", flexDirection: "row" }}>
-                      <label>Date:</label> */}
+                    {cartItems.length > 0 && (
+                    <div style={{ display: "flex", flexDirection: "row", alignItems: "baseline" }}>
+                      <label style={{    position: "relative",
+    top: "2px",}}>Date:</label>
                       {/* <CustomDropdown label="Date" Label={true} options={["Today", "Tomorrow", "16 June", "17 June"]} searchFilter={false} width={"70px"} fontSize={"12px"} /> */}
-                      {/* <DatePicker color={"#232323"} date={"Today"} />
-                    </div> */}
+                      <DatePicker color={"#232323"} date={"Today"} />
+                    </div> 
+                    )}
                     {cartItems.length > 0 && (
                       <div style={{ display: "flex", flexDirection: "row", position: "relative", top: "-3px"}}>
                         <label style={{ marginRight: "10px" }}>Time:</label>
@@ -698,7 +702,8 @@ function SalonPage() {
                     style={{ position: "absolute", right: "1vw", top: "4vh" }}
                   >
                     <img
-                      style={{ transform: "scale(1)", marginRight:"10px"}}
+                      style={{ transform: "scale(1)", marginRight:"10px",position: "relative",
+                      top: "-18px",}}
                       onClick={() => setOpensearch(!opensearch)}
                       src={search}
                     />
@@ -864,7 +869,7 @@ function SalonPage() {
                 </div>
                 <span className="close-button" onClick={handleClosePopup}>
                   <WestIcon fontSize="medium" />
-                  <span style={{ marginLeft: "4px" }}>Back</span>
+                  <span style={{ marginLeft: "4px", position:"relative", top:"-7px" }}>Back</span>
                 </span>
               </div>
             )}
