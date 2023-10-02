@@ -452,7 +452,7 @@ function SalonPage() {
                           alignItems: "center",
                         }}
                       >
-                        <div className="SalonRatings">{salonData.ratings}</div>
+                        {/* <div className="SalonRatings">{salonData.ratings}</div> */}
                         <Rating
                           size="large"
                           value={salonData.ratings}
@@ -469,7 +469,7 @@ function SalonPage() {
                         style={{
                           fontSize: "12px",
                           position: "relative",
-                          top: "-10px",
+                          top: "0",
                         }}
                       >
                         of {salonData.reviewData.length} reviews
@@ -484,7 +484,7 @@ function SalonPage() {
                       // width: "100%",
                       alignItems: "center",
                     }}
-                    className="ratings MobileView"
+                    className="ratings MobileView mobileRate1"
                   >
                     {/* <div className="star-rating MobileView ">
                       <div
@@ -567,16 +567,24 @@ function SalonPage() {
                       <div
                         style={{
                           display: "flex",
-                          justifyContent: "flex-end",
                           width: "100%",
-                          justifyContent: "flex-end",
+                          justifyContent: "space-between",
                           // padding: "0 6px",
                           marginTop: "-15px",
+                          alignItems: "center",
                         }}
                       >
-                        {/* <button className="writeReview-botton" onClick={writeReviewf}>
+                        <button className="writeReview-botton" style={{
+                              fontSize: "10px",
+                              padding: "4px 40px",
+                              height: "20px",
+                              justifyContent: "center",
+                              display: "flex",
+                              alignItems: "center",
+                        }} 
+                        onClick={writeReviewf}>
                     Write a Review
-                  </button> */}
+                  </button>
                         <button
                           className="showmore1" style={{
                             color: "white",
