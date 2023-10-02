@@ -564,7 +564,7 @@ function SalonPage() {
                       ))}
                       
                     {salonData.reviewData.length > reviewsToShow && (
-                      <div
+                      <div className="buttonEnd"
                         style={{
                           display: "flex",
                           width: "100%",
@@ -574,7 +574,7 @@ function SalonPage() {
                           alignItems: "center",
                         }}
                       >
-                        <button className="writeReview-botton" style={{
+                        <button className="writeReview-botton mobileRate" style={{
                               fontSize: "10px",
                               padding: "4px 40px",
                               height: "20px",
