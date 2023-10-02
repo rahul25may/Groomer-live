@@ -965,7 +965,7 @@ p {
 .time-picker-icon {
   cursor: pointer;
   position: relative;
-  top: 0px;
+  top: -3px;
 }
 
 .time-picker-input input {
