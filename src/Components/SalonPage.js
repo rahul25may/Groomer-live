@@ -481,12 +481,12 @@ function SalonPage() {
                       display: "flex",
                       flexDirection: "row",
                       justifyContent: "space-between",
-                      width: "100%",
+                      // width: "100%",
                       alignItems: "center",
                     }}
                     className="ratings MobileView"
                   >
-                    <div className="star-rating MobileView">
+                    {/* <div className="star-rating MobileView ">
                       <div
                         style={{
                           display: "flex",
@@ -519,7 +519,10 @@ function SalonPage() {
                     </div>
                     <div className="SalonRatings MobileView">
                       {salonData.ratings}
-                    </div>
+                    </div> */}
+                    <button className="writeReview-botton" onClick={writeReviewf}>
+                    Write a Review
+                  </button>
                   </div>
                 </div>
                 <div className="reviews">
@@ -566,18 +569,30 @@ function SalonPage() {
                           display: "flex",
                           justifyContent: "flex-end",
                           width: "100%",
-                          justifyContent: "space-evenly",
-                          padding: "0 6px",
+                          justifyContent: "flex-end",
+                          // padding: "0 6px",
+                          marginTop: "-15px",
                         }}
                       >
-                        <button className="writeReview-botton" onClick={writeReviewf}>
+                        {/* <button className="writeReview-botton" onClick={writeReviewf}>
                     Write a Review
-                  </button>
+                  </button> */}
                         <button
-                          className="showmore"
+                          className="showmore1" style={{
+                            color: "white",
+                            backgroundColor: "transparent",
+                            border: "2px solid black",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
                           onClick={handleShowMoreReviews}
                         >
-                          Show All Reviews
+                          More <span className="moreArrow"
+                          style={{
+                          fontSize: "27px",
+                          marginTop: "-1px",
+                          }}
+                          >&#8594;</span>
                         </button>
                       </div>
                     )}
