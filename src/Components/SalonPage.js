@@ -566,7 +566,7 @@ function SalonPage() {
                           display: "flex",
                           justifyContent: "flex-end",
                           width: "100%",
-                          justifyContent: "space-between",
+                          justifyContent: "space-evenly",
                           padding: "0 6px",
                         }}
                       >

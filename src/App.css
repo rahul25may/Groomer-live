@@ -491,6 +491,13 @@ body {
     width: 100%;
   }
 }
+.best-salon-card:hover {
+  transform: scale(1.15);
+}
+.best-salon-card img:hover{
+  /* position: fixed; */
+  transform: scale(0.9);
+}
 
 .home-services {
   display: flex;
@@ -803,7 +810,6 @@ p {
   border-radius: 25px;
   padding: 20px;
   padding-right: 0;
-  
   padding-left: 8px;
   /* Add other styles like background color, box-shadow, etc. to style the popup */
   /* ... */
@@ -1385,6 +1391,7 @@ p {
   font-weight: bold;
   font-size: 12px;
   margin-top: 6.5px;
+  margin-bottom: 4px;
   /* margin-left: 60px; */
   text-decoration: underline;
   text-decoration-color: white;
@@ -1578,7 +1585,8 @@ td {
     font-weight: bold;
     font-size: 12px;
     margin-top: 7px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    margin-bottom: 4px;
     text-decoration: underline;
     text-decoration-color: white;
     text-decoration-skip-ink: 10px;
