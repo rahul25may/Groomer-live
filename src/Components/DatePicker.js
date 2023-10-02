@@ -109,7 +109,7 @@ const DatePicker = ({ color, date }) => {
                         color: '#fff',
                         fontSize: '15px',
                         position: 'relative',
-                        top: '2px',
+                        top: '0px',
                         paddingRight: '0',
                         marginRight: '-8px',
                     }}
