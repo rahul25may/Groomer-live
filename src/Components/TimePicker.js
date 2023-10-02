@@ -161,7 +161,7 @@ const TimePicker = () => {
                         color: '#fff',
                         zIndex: 9999,
                         padding: '5px 6px',
-                        minWidth:'90px',
+                        minWidth:'96px',
                     }}
                 >
                     {completeTimeOptions.map((timeOption, index) => (
