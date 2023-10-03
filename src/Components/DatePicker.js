@@ -81,7 +81,7 @@ const DatePicker = ({ color, date }) => {
     };
 
     // List of shortcut options
-    const dropdownOptions = ['Today', 'Tomorrow', '16 June'];
+    const dropdownOptions = ['Today', 'Tomorrow', '16 June', '17 June', '18 June', '19 June', '20 June'];
 
     return (
         <div className="datepicker-container">
