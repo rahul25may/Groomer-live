@@ -782,7 +782,7 @@ p {
   background: #FF6548;
   border: 0;
   color: #FFF;
-  padding: 0px 17px 5px 17px;
+  padding: 2px 17px 0px 17px;
   border-radius: 12px;
 }
 
@@ -965,7 +965,7 @@ p {
 .time-picker-icon {
   cursor: pointer;
   position: relative;
-  top: -3px;
+  top: 0px;
 }
 
 .time-picker-input input {

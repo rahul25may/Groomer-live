@@ -122,7 +122,7 @@ function FilterSortPopup({ close, filterOptions, setFilterOptions }) {
     return (
         <div className='filter-sort-popup'>
             <div className="filter-popup-content">
-                <div style={{ position: "absolute", right: "2vw", fontSize: "30px", cursor: "pointer", color: "#FF6548", fontWeight: "bold" }} onClick={close}>&times;</div>
+                <div style={{ position: "absolute", right: "4vw", fontSize: "30px", cursor: "pointer", color: "#FF6548", fontWeight: "bold" }} onClick={close}>&times;</div>
 
                 <div className="filter-section">
                     <p><u>Filter</u></p>
@@ -230,7 +230,11 @@ function FilterSortPopup({ close, filterOptions, setFilterOptions }) {
                     </div>
                     <div style={{ display: "flex", flexDirection: "row", gap: "15px" }}>
                         <label htmlFor="ratings">Ratings:</label>
-                        <div>
+                        <div
+                        style={{position:"relative",
+                                top:"-1.5px"            
+                    }}  
+                        >
                             <Rating
                                 name="ratings"
                                 value={parseFloat(filterOptions.ratings)}
